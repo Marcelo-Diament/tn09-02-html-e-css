@@ -11,200 +11,174 @@
 </head>
 
 <body>
-    <header>
-        <img data-func="minha foto" src="./assets/img/euzinho.jpg"
-            alt="Foto do candidato mais promissor que vc vai encontrar, acredite no que eu digo" width="96px"
-            height="96px">
-        <h1>Programador Web Junior</h1>
-        <ul type="none">
-            <li>Marcelo Diament</li>
-            <li>
-                <a href="tel:+5511976052723">+55 11 97605 2723</a>
-            </li>
-            <li>
-                <a href="https://wa.me/+5511976052723?text=%E2%9D%A4%20Ol%C3%A1,%0D%0A%0D%0AAcessei%20o%20site%20agilmindset%20e%20gostaria%20de%20saber%20mais%20sobre%0D%0A"
-                    target="_blank" rel="noopener noreferrer">Manda um Zap!</a>
-            </li>
-            <li>
-                <a
-                    href="mailto:marcelodiament@gmail.com?subject=Vaga%20de%20Programador%20Jr&body=Olá,%20gostei%20do%20seu%20perfil!">marcelodiament@gmail.com</a>
-            </li>
-            <li>
-                <a href="https://github.com/Marcelo-Diament" target="_blank"
-                    rel="noopener noreferrer">github.com/Marcelo-Diament</a>
-            </li>
-            <li>
-                <a href="https://linkedin.com/in/marcelodiament" target="_blank"
-                    rel="noopener noreferrer">linkedin.com/in/marcelodiament</a>
-            </li>
-        </ul>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Programador Web Junior</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#top">Início <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#xp">Experiência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formacao">Formação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active" style="background-image:url('https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')">
-            <h1>MEU CAROUSEL-ITEM 01</h1>
-          </div>
-          <div class="carousel-item" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGvnHrrsDvFiMRdccQWmQCgzrWQ0cbY0pIZk2r54LgOA&usqp=CAU&ec=45690269')">
-            <h1>MEU CAROUSEL-ITEM 02</h1>
-          </div>
-          <div class="carousel-item" style="background-image:url('https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')">
-            <h1>MEU CAROUSEL-ITEM 03</h1>
-          </div>
-          <div class="carousel-item" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGvnHrrsDvFiMRdccQWmQCgzrWQ0cbY0pIZk2r54LgOA&usqp=CAU&ec=45690269')">
-            <h1>MEU CAROUSEL-ITEM 04</h1>
-          </div>
+    <main class="container-fluid px-0 bg-light">
+        <div id="bannerTopo" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div data-banner="1" class="carousel-item p-3 active">
+                    <h1 class="mt-5">Procurando um dev ponta firme?</h1>
+                    <p>Achou! Entre em contato e saiba como posso te ajudar!</p>
+                </div>
+                <div data-banner="2" class="carousel-item p-3">
+                    <h1 class="mt-5">O que eu sei?</h1>
+                    <p>Acesse meu github e descubra por conta própria</p>
+                </div>
+                <div data-banner="3" class="carousel-item p-3">
+                    <h1 class="mt-5">Gostou?</h1>
+                    <p>Então me contrata!</p>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#bannerTopo" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#bannerTopo" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-    <main>
-        <section>
-            <h2>SOBRE</h2>
-            <p><b>QUERO SER DEV!!!</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum aperiam
-                molestias atque consequuntur, earum quos quaerat qui tempore enim iusto quia illo dolorum dolore neque
-                nesciunt. Dignissimos corrupti quam officiis?</p>
-        </section>
-        <section>
-            <h2>SKILLS</h2>
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Comunicação clara</li>
-                <li>Liderança</li>
-                <li><strong>Trabalho em equipe</strong></li>
-                <li><strong>Flexibilidade e jogo de cintura</strong></li>
-            </ul>
-            <h3>Hard Skills</h3>
-            <ul>
-                <li>
-                    <h4>Front End</h4>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>Back End</h4>
-                    <ul>
-                        <li>PHP</li>
-                        <li>Node.js</li>
-                        <li>MongoDB</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section class="destaque">
-            <h2>FORMAÇÃO</h2>
-            <table>
-                <tr>
-                    <th colspan="3">Ano</th>
-                </tr>
-                <tr>
-                    <td>Programação Web Full Stack</td>
-                    <td>Digital House</td>
-                    <td rowspan="2">Extensão</td>
-                </tr>
-                <tr>
-                    <td>Perucas para Carecas</td>
-                    <td>Digital Hair</td>
-                </tr>
-                <tr>
-                    <td>Inglês</td>
-                    <td>Wisard</td>
-                    <td>Idioma</td>
-                </tr>
-            </table>
-        </section>
-        <section class="destaque">
-            <h2>EXPERIÊNCIA</h2>
-            <table>
-                <tr>
-                    <td>DH</td>
-                    <td>Professor</td>
-                    <td>Mai/19 - Atual</td>
-                </tr>
-                <tr>
-                    <td>Jüssi</td>
-                    <td>Dev Pleno</td>
-                    <td>Out/19 - Atual</td>
-                </tr>
-            </table>
-        </section>
-        <section>
-            <h2>Entre em contato comigo!</h2>
-            <p class="destaque">Entre em contato através do meu email, Linked In, Whatsapp, telefone ou... se preferir,
-                preencha o
-                formulário a seguir. Retornarei o mais brevemente possível.</p>
-
-            <form action="./obrigado.html" method="post">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+        <div class="container">
+            <section id="skills" class="row">
+                <h2 class="col-12 mt-5 mb-3">Skills</h2>
+                <article class="col-12 col-md-6">
+                    <h3>Soft Skills</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sunt dolorem doloremque hic
+                        ipsam ducimus quod, ad est aut voluptatibus nulla natus quasi omnis officiis mollitia labore
+                        minus sit tempora.</p>
+                </article>
+                <article class="col-12 col-md-6">
+                    <h3>Hard Skills</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sunt dolorem doloremque hic
+                        ipsam ducimus quod, ad est aut voluptatibus nulla natus quasi omnis officiis mollitia labore
+                        minus sit tempora.</p>
+                </article>
+            </section>
+            <section id="xp" class="row">
+                <h2 class="col-12 mt-5 mb-3">Experiência</h2>
+                <article class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="bg-light border rounded p-3">
+                        <h3>2020</h3>
+                        <ul>
+                            <li>Cargo: Dev</li>
+                            <li>Empresa: Umbrella Co.</li>
+                        </ul>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                </article>
+                <article class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="bg-light border rounded p-3">
+                        <h3>2019</h3>
+                        <ul>
+                            <li>Cargo: Dev</li>
+                            <li>Empresa: Umbrella Co.</li>
+                        </ul>
                     </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="bg-light border rounded p-3">
+                        <h3>2018</h3>
+                        <ul>
+                            <li>Cargo: Dev</li>
+                            <li>Empresa: Umbrella Co.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section id="formacao" class="row">
+                <h2 class="col-12 mt-5 mb-3">Formação</h2>
+                <article class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="bg-light border rounded p-3">
+                        <h3>Extensão</h3>
+                        <ul>
+                            <li>Curso: Full Stack</li>
+                            <li>Instituição: Digital House</li>
+                            <li>2020</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="bg-light border rounded p-3">
+                        <h3>Superior</h3>
+                        <ul>
+                            <li>Curso: Design</li>
+                            <li>Instituição: FAAP</li>
+                            <li>2006 - 2010</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <div class="container">
+            <section id="contato" class="row">
+                <h2 class="col-12 mt-5 mb-3">Contato</h2>
+                <form action="" class="col-12 col-md-6 order-1 order-md-0">
+                    <p>Entre em contato comigo e não se arrependerá!</p>
+                    <p>Retornarei assim que acabar a minha cervejinha.</p>
+                    <div class="row mb-4">
+                        <div class="col-12 col-md-6">
+                            <input type="text" class="form-control" placeholder="Fulano">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="text" class="form-control" placeholder="da Silva Nóbrega Jr.">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-12 col-md-6">
+                            <input type="email" class="form-control" placeholder="ibm@microsoft.com">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="text" class="form-control" placeholder="+55 11 98765-4321">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Me comprometo a te contratar
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary d-block ml-auto">Contratar Agora</button>
+                </form>
+                <div class="col-12 col-md-6 order-0">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1dN-LTBC3uUdrPVhBlm-sr9SvaQg" width="100%"
+                        height="360"></iframe>
                 </div>
-                <div class="form-group">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2"
-                        placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Check me out
-                        </label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-            </form>
-        </section>
+            </section>
+        </div>
     </main>
-    <hr>
-    <footer>
-        <p>Marcelo Diament 2020 &copy; | <a
+    <footer class="bg-dark">
+        <p class="text-center text-white">Marcelo Diament 2020 &copy; | <a
                 href="mailto:marcelodiament@gmail.com?subject=Vaga%20de%20Programador%20Jr&body=Olá,%20gostei%20do%20seu%20perfil!">marcelodiament@gmail.com</a>
             | <a href="https://wa.me/+5511976052723?text=%E2%9D%A4%20Ol%C3%A1,%0D%0A%0D%0AAcessei%20o%20site%20agilmindset%20e%20gostaria%20de%20saber%20mais%20sobre%0D%0A"
-                target="_blank" rel="noopener noreferrer" title="Enviar um zap">Manda um Zap!</a></p>
+                target="_blank" rel="noopener noreferrer" title="Enviar um zap">Manda um Zap!</a>
+        </p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

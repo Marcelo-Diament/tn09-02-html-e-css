@@ -6,15 +6,48 @@
   scroll-behavior: smooth;
 }
 
-.carousel-item {
-  height: 400px;
-  overflow: hidden;
-  background-color: #1e931a;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
-.carousel-item h1 {
+ul,
+ol {
+  list-style: none;
+}
+
+main {
+  margin-top: 56px;
+  min-height: calc(100vh - 100px);
+}
+
+.carousel-item {
+  height: 25vh;
+  text-align: center;
   color: white;
+}
+
+[data-banner="1"] {
+  background-color: purple;
+}
+[data-banner="2"] {
+  background-color: darkslategray;
+}
+[data-banner="3"] {
+  background-color: darkslateblue;
+}
+
+h2 {
+  color: darkslateblue;
+  font-weight: bolder;
+}
+
+h3 {
+  color: darkslategray;
+}
+
+footer {
+  height: 44px;
 }
